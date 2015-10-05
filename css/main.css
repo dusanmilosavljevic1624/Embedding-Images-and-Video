@@ -1,0 +1,588 @@
+  .cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+body{
+	font-family: Roboto, sans-serif;
+}
+
+
+.header{
+	height: 60px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(92, 92, 92);
+	border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.header-content{
+	box-sizing: border-box;
+	padding: 10px 10px;
+}
+
+.header-aligned{
+	margin: 4.5px 0;
+}
+
+.header-text{
+	padding-left: 5px;
+	font-size: 20px;
+	margin: 5px 0 0 25px;
+}
+
+.header-user-image{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	margin-left: 25px;
+}
+
+.header-button{
+	display: inline-block;
+	padding: 6px;
+	box-sizing: border-box;
+}
+
+.header-image{
+	height: 40px;
+	width: 100px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.static-header-button{
+	display: inline-block;
+	padding: 6px;
+	box-sizing: border-box;
+	background: #F1F1F1;
+	border: 1px solid rgb(198, 198, 198);
+}
+
+#header-button:hover{
+	background: #F1F1F1;
+	border: 1px solid rgb(198, 198, 198);
+}
+
+.header-textbox{
+	background: #F1F1F1;
+	box-sizing: border-box;
+	border: 1px solid rgb(198, 198, 198);
+	width: 500px;
+	float: left;
+	height: 30px;
+	margin: 5px 0 5px 50px;
+}
+
+.header-textbox > i:first-child{
+	margin-right: 10px;
+	margin-left: 2px;
+}
+
+.header-textbox > i:last-child{
+	margin-right: 5px;
+}
+
+.textbox-header{
+	margin-top: 2px;
+}
+
+.textbox-aligned{
+	position: relative;
+	top: 4px;
+}
+
+.content-border{
+	background-color: #F1F1F1;
+	padding-bottom: 50px;
+}
+
+.content{
+	width: 95%;
+	margin: 0 auto;
+	padding: 8px;
+	box-sizing: padding-box;
+}
+
+.main{
+	width: 68%;
+	float: left;
+	position: relative;
+	right: 10px;
+}
+
+.video{
+	height: 500px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.video-info{
+	height: 150px;
+	background-color: white;
+	margin-top: 10px;
+	box-sizing: border-box;
+	border: 1px solid rgb(198, 198, 198);
+	margin-bottom: 10px;
+	color: rgb(92, 92, 92);
+}
+
+.video-info h2{
+	margin: 5px;
+	color: black;
+}
+
+.video-info-extra{
+	height: 80px;
+	border-bottom: 1px solid rgb(198, 198, 198);
+	position: relative;
+}
+
+.channel-img{
+	box-sizing: border-box;
+	height: 60px;
+	width: 60px;
+	border: 1px solid rgb(198, 198, 198);
+	position: relative;
+	top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.channel-info{
+	float: left;
+	margin-left: 10px;
+}
+
+.channel-info h5{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: relative;
+	top: 10px;
+	color: black;
+}
+
+.channel-info .red-button{
+	background-color: red;
+	padding: 5px;
+	color: white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	display: inline;
+	float: left;
+	font-weight: 100;
+}
+
+
+.subscribers{
+	display: block;
+	padding: 4px 5px;
+	float:left;
+	box-sizing: border-box;
+	font-weight: 100;
+	border: 1px solid rgb(192, 192, 192);
+	background: #F1F1F1;
+}
+
+h5.subscribers{
+	color: rgb(92, 92, 92);
+}
+
+.views{
+	float: right;
+	position: relative;
+	top: 40px;
+	margin: 0 10px 0 0;
+}
+
+.views h3{
+	position: relative;
+	top: -1px;
+	border-bottom: 2px solid rgb(65, 196, 219);
+	padding-left: 25px;
+}
+
+.share{
+	clear: both;
+	position: relative;
+	top: 30px;
+}
+
+.button{
+	float: left;
+	margin-right: 15px;
+}
+
+.button:first-child{
+	margin-left: 10px;
+}
+
+.likes{
+	position: relative;
+	top: 30px;
+}
+
+.like{
+	float: right;
+}
+
+.like:first-child{
+	margin-right: 10px;
+}
+
+.like:last-child{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*Video Description*/
+
+	.video-description{
+		background-color: white;
+		border: 1px solid rgb(198, 198, 198);
+		box-sizing: padding-box;
+		padding: 0 10px;
+	}
+
+	.video-description h5{
+		margin-top: 10px;
+		padding-top: 10px;
+		margin-bottom: 0;
+	}
+
+	.video-description-content{
+		margin-left: 5px;
+	}
+
+
+	.show-more{
+		border-top: 1px solid rgb(192, 192, 192);
+		text-align: center;
+		margin-bottom: 5px;
+		color: rgb(92, 92, 92);
+		font-size: 14px;
+		font-weight: 100;
+	}
+
+	#moav{
+		margin-top: 0;
+	}
+
+
+/*Comment Section*/
+.comment{
+	margin-top: 10px;
+	background-color: white;
+	border: 1px solid rgb(192, 192, 192);
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	color: rgb(92, 92, 92);
+}
+
+.comment-text{
+	color: black;
+}
+
+
+.reply-like
+
+.comment:last-child{
+	padding-bottom: 30px;
+}
+
+.comment-content{
+	margin-left: 10px;
+}
+
+.my-image{
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+.comment-textbox{
+	float: left;
+	width: 770px;
+	border: 1px solid rgb(198, 198, 198);
+	height: 50px;
+	margin-left: 10px;
+	color: rgb(92, 92, 92);
+}
+
+.dropdown-button{
+	clear: both;
+	margin-top: 5px;
+	position: relative;
+}
+
+.dropdown-button p{
+	padding: 5px 10px;
+	border: 1px solid rgb(198, 198, 198);
+	display: inline-block;
+	color: black;
+	font-size: 12px;
+	background: #F1F1F1;
+}
+
+.user-comment{
+		overflow: hidden;
+		margin-bottom: 15px;
+}
+
+.lajkovi{
+	font-size: 16px;
+}
+
+.user-image{
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+
+.user-comment h5{
+	margin: 0 0 0 5px;
+	display: inline;
+	color: rgb(22, 122, 208);
+}
+
+.user-comment p{
+	margin: 3px 0 0 10px;
+	font-size: 12px;
+	position: relative;
+	left: 5px;
+}
+
+.user-comment .comment-date{
+	font-size: 10px;
+}
+
+.more-comments{
+	margin-left: 55px;
+}
+
+.more-comments h6{
+	margin: 10px 0;
+}
+
+.reply{
+	margin-left: 55px;
+	margin-top: 10px;
+}
+
+.reply p{
+}
+
+.reply .reply-likes{
+	margin-left: 30px;
+	color: rgb(92, 92, 92);
+}
+
+.like-count{
+	color: rgb(22, 122, 208);
+}
+
+.user-reply-image{
+	height: 30px;
+	width: 30px;
+	float: left;
+}
+
+.all-comments{
+	width: 80%;
+	border: 1px solid rgb(192, 192, 192);
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+	font-size: 12px;
+	background: #F1F1F1;
+	margin-bottom: 20px;
+}
+
+/*SideBar*/
+
+.aside{
+	float: left;
+	width: 30%;
+	background-color: white;
+	border: 1px solid rgb(192, 192, 192);
+	box-sizing: border-box;
+	margin-left: 10px;
+}
+
+.aside-bar{
+	overflow: auto;
+}
+
+.aside-bar .next{
+	margin: 10px 0 5px 10px;
+	float: left;
+	line-height: 22px;
+}
+
+
+.aside-bar .autoplay{
+	float: right;
+	margin: 10px 10px 10px 0;
+	color: rgb(92, 92, 92);
+	line-height: 22px;
+}
+
+.autoplay-text{
+	float: right;
+	line-height:22px;
+	margin: 10px 10px 10px 0;
+	color: rgb(92, 92, 92);
+}
+
+.autoplay i{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 22px;
+}
+
+.autoplay i:first-child{
+	margin-left: 0;
+}
+
+.autoplay i:last-child{
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+/*aside videos*/
+
+.aside-video{
+	margin-bottom: 10px;
+}
+
+.aside-video:first-child{
+	border-bottom: 1px solid rgb(192, 192, 192);
+	padding-bottom: 10px;
+}
+
+.aside-video-content{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.video-image{
+	height: 80px;
+	width: 120px;
+	float: left;
+	clear:both;
+}
+
+.video-text{
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.video-text h5{
+	margin:0 0 5px 0;
+}
+
+.video-text h6{
+	margin: 0 0 5px 0;
+	color: rgb(92, 92, 92);
+}
+
+
+.clearfix{
+	clear: both;
+}
+
+/*Footer*/
+.footer{
+	clear: both;
+	border-top: 1px solid rgb(192, 192, 192);
+	box-sizing: border-box;
+	margin-bottom: 0;
+	color: rgb(92, 92, 92);
+}
+
+.footer-content{
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+}
+
+.logo-row{
+	border-bottom: 1px solid rgb(192, 192, 192);
+	overflow: auto;
+}
+
+.footer-logo{
+	height: 50px;
+	width: 100px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.footer-buttons{
+	float: left;
+}
+
+.footer-button{
+	float: left;
+	border: 1px solid rgb(192, 192, 192);
+	padding: 5px;
+	margin: 15px 10px 0 0;
+	background-color: #F1F1F1;
+}
+
+.footer-button:first-child{
+	margin-left: 10px;
+}
+
+.footer-button:last-child{
+	margin-right: 0px;
+}
+
+
+
+.link-headers h5{
+	float: left;
+	margin: 15px 10px 10px 0;
+
+}
+
+.link-headers:last-child{
+	margin-right: 0px;
+}
+
+.link-paragraphs{
+	clear: left;
+}
+
+.link-paragraphs p{
+	float: left;
+	margin: 0 10px 15px 0;
+	font-size: 12px;
+}
+
+.link-paragraphs:last-child{
+	margin-right: 0;
+}
