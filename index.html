@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Youtube VideoPlayer Copy</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="header">
+		<div class="header-content">
+			<div class="header-image">
+				<img height="40" width="100" src="slike/slika-logo.png">
+			</div>
+			<div class="header-aligned header-button left" id="header-button">
+				<i class="fa fa-bars"></i> <i class="fa fa-caret-down"></i>
+			</div>
+			<div class="header-textbox left">
+				<i class="fa fa-search textbox-aligned left"></i>
+				<h5 class="left textbox-aligned textbox-header">Search YouTube</h5>
+				<i class="fa fa-keyboard-o textbox-aligned right"></i>
+			</div>
+			<div class="header-aligned right">
+				<h6 class="static-header-button textbox-header">Upload</h6>
+				<div class="right">
+					<img class="header-user-image" height="30" width="30" src="slike/slika2.jpg">
+				</div>
+				<i class="fa fa-bell-o header-text right"></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-border">
+		<div class="content cf">
+			<div class="main">
+				<div class="video">
+					<iframe width="871" height="500" src="https://www.youtube.com/embed/A6pgh8bF2oQ" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+				<!-- First info part (Channel info) -->
+				<div class="video-info">
+					<h2>Ultimate Thug Life Compilation of August 2015 Episode 1</h2>
+					<div class="video-info-extra">
+						<!-- image -->
+						<div class="channel-img">
+							<img width="60" height="60" src="slike/slika1.jpg">
+						</div>
+						<!-- Information -->
+						<div class="channel-info">
+							<h5>Melvin Hordes <i class="fa fa-check-square-o"></i></h5>
+							<h5 class="red-button"><i class="fa fa-youtube-play"></i> Subscribe</h5>
+							<h5 class="subscribers">22,232</h5>
+						</div>
+						<!-- Number of views -->
+						<div class="views">
+							<h3>35.390.650</h3>
+						</div>
+						<!-- Sharing and like-ing -->
+						<div class="share">
+							<div class="add button">
+								<i class="fa fa-plus"></i> Add
+							</div>
+							<div class="share-video button">
+								<i class="fa fa-share-alt"></i> Share
+							</div>
+							<div class="more button">
+								<i class="fa fa-ellipsis-h"></i> More
+							</div>
+						</div>
+
+						<div class="likes">
+							<div class="like thumbs-down">
+								<i class="fa fa-thumbs-down"></i> 213.522
+							</div>
+							<div class="like thumbs-up">
+								<i class="fa fa-thumbs-up"></i> 3.135.720
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Video description (Date, Desc) -->
+				<div class="video-description">
+					<div class="video-description-content">
+						<h5>Objavljeno je 09.08.2015</h5>
+						<p>Levi casually unveils the array of strange and magical objects he keeps around his apartment. The Comedy Central app has full episodes of your favorite shows available now. http://on.cc.com/1e85GN8</p>
+						<div class="show-more">
+							<h5 id="moav">SHOW MORE</h5>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Comment Section-->
+				<div class="comment cf">
+					<div class="comment-content">
+						<h3>All Comments</h3>
+						<div class="my-comment">
+							<div class="my-image">
+								<img width="50" height="50" src="slike/slika2.jpg">
+							</div>
+							<div class="comment-textbox">
+								<p>Write a public comment</p>
+							</div>
+						</div>
+						<div class="dropdown-button">
+							<p>Top comments &nbsp <i class="fa fa-caret-down"></i></p>
+						</div>
+						<div class="user-comment">
+							<div class="user-image">
+								<img width="50" height="50" src="slike/slika3.jpg">
+							</div>
+							<h5>Alex Taylor</h5>
+							<p class="comment-text">Like the video if you want more, and comment here which artist I should do next! Thanks! :D</p>
+							<p>Reply .
+								<span class="like-count">23</span>
+								<span class="lajkovi"><i class="fa fa-thumbs-up"></i> <i class="fa fa-thumbs-down"></i></span>
+							</p>
+						</div>
+						<div class="more-comments">
+							<h6>Show 16 more answers</h6>
+						</div>
+						<div class="reply">
+							<div class="user-comment">
+								<div class="user-reply-image">
+									<img width="30" height="30" src="slike/slika4.png">
+								</div>
+								<h5>Lyke Tyler</h5>
+								<p class="comment-text">+James Towey I second that</p>
+								<p class="reply-likes">Reply .
+									<span class="like-count">2</span>
+									<span class="lajkovi"><i class="fa fa-thumbs-up"></i> <i class="fa fa-thumbs-down"></i></span>
+								</p>
+							</div>
+						</div>
+						<div class="reply">
+							<div class="user-comment">
+								<div class="user-reply-image">
+									<img width="30" height="30" src="slike/slika5.jpg">
+								</div>
+								<h5>lavatron08</h5>
+								<p class="comment-text">Where's on melancholy hill? •_•</p>
+								<p class="reply-likes">Reply .
+									<span class="like-count">23</span>
+									<span class="lajkovi"><i class="fa fa-thumbs-up"></i> <i class="fa fa-thumbs-down"></i></span>
+								</p>
+							</div>
+						</div>
+						<div class="user-comment">
+							<div class="user-image">
+								<img width="50" height="50" src="slike/slika6.jpg">
+							</div>
+							<h5>Gian gerd</h5>
+							<p class="comment-text">Hello you sexy little swines</p>
+							<p>Reply .
+								<span class="like-count">188</span>
+								<span class="lajkovi"><i class="fa fa-thumbs-up"></i> <i class="fa fa-thumbs-down"></i></span>
+							</p>
+						</div>
+						<div class="more-comments">
+							<h6>Show 8 more answers</h6>
+						</div>
+						<div class="reply">
+							<div class="user-comment">
+								<div class="user-reply-image">
+									<img width="30" height="30" src="slike/slika7.jpg">
+								</div>
+								<h5>Poppy 55</h5>
+								<p class="comment-text">Friendly yours</p>
+								<p class="reply-likes">Reply .
+									<span class="lajkovi"><i class="fa fa-thumbs-up"></i> <i class="fa fa-thumbs-down"></i></span>
+								</p>
+							</div>
+						</div>
+						<div class="user-comment">
+							<div class="user-image">
+								<img width="50" height="50" src="slike/slika8.jpg">
+							</div>
+							<h5>Reyes Partida</h5>
+							<p class="comment-text">I feel that gorillaz-Hong Kong should of been here.. It's my favorite song</p>
+							<p>Reply .
+								<span class="like-count">213</span>
+								<span class="lajkovi"><i class="fa fa-thumbs-up"></i> <i class="fa fa-thumbs-down"></i></span>
+							</p>
+						</div>
+						<div class="more-comments">
+							<h6>Show 16 more answers</h6>
+						</div>
+						<div class="reply">
+							<div class="user-comment">
+								<div class="user-reply-image">
+									<img width="30" height="30" src="slike/slika9.jpg">
+								</div>
+								<h5>Sam Samoth</h5>
+								<p class="comment-text">+IgneousGorilla thanks bro for the song #1</p>
+								<p class="reply-likes">Reply .
+									<span class="like-count">1</span>
+									<span class="lajkovi"><i class="fa fa-thumbs-up"></i> <i class="fa fa-thumbs-down"></i></span>
+								</p>
+							</div>
+						</div>
+						<div class="reply">
+							<div class="user-comment">
+								<div class="user-reply-image">
+									<img width="30" height="30" src="slike/slika10.png">
+								</div>
+								<h5>Xalted De</h5>
+								<p class="comment-text">+Diego Armando I think U R getting way too wurked up about dis. There! Eat your fucking heart out. =)</p>
+								<p class="reply-likes">Reply .
+									<span class="lajkovi"><i class="fa fa-thumbs-up"></i> <i class="fa fa-thumbs-down"></i></span>
+								</p>
+							</div>
+						</div>
+						<div class="all-comments">
+							SHOW MORE
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="aside">
+				<div class="aside-bar">
+					<h5 class="next">Up Next</h5>
+					<h5 class="autoplay"><i class="fa fa-info-circle"></i> <i class="fa fa-toggle-off"></i></h5>
+					<h5 class="autoplay-text">Autoplay</h5>
+				</div>
+				<div class="aside-videos">
+					<div class="aside-video-content">
+
+						<div class="aside-video cf">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika1.png">
+							</div>
+							<div class="video-text">
+								<h5>Thug Life Compilation</h5>
+								<h6>Author: Thug Life Nation</h6>
+								<h6>284.578.938 views</h6>
+							</div>
+						</div>
+
+						<div class="aside-video cf">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika2.png">
+							</div>
+							<div class="video-text cf">
+								<h5>Thug Life Compilation 2</h5>
+								<h6>Author: Thug Life Nation</h6>
+								<h6>5.978.696 views</h6>
+							</div>
+						</div>
+
+						<div class="aside-video cf">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika3.png">
+							</div>
+							<div class="video-text">
+								<h5>Thug Life Compilation Of August</h5>
+								<h6>Author: Thug Life Nation</h6>
+								<h6>2.492.504 views</h6>
+							</div>
+						</div>
+
+						<div class="aside-video cf">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika4.png">
+							</div>
+							<div class="video-text">
+								<h5>Thug Life Compilation Of July</h5>
+								<h6>Author: ImagineDragonsVEVO</h6>
+								<h6>Recommended For You</h6>
+							</div>
+						</div>
+						<div class="aside-video cf">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika6.png">
+							</div>
+							<div class="video-text">
+								<h5>Gym Girl! Thug Life</h5>
+								<h6>Author: 9salieri9</h6>
+								<h6>114.309 views</h6>
+							</div>
+						</div>
+
+						<div class="aside-video">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika8.png">
+							</div>
+							<div class="video-text">
+								<h5>Don't Judge Challenge Vines</h5>
+								<h6>Author: Best Viners</h6>
+								<h6>8.725.134 views</h6>
+							</div>
+						</div>
+
+						<div class="aside-video">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika7.png">
+							</div>
+							<div class="video-text">
+								<h5>GTA5 Thug Life Compilation</h5>
+								<h6>Author: Thug Life Nation</h6>
+								<h6>1.418.105 views</h6>
+							</div>
+						</div>
+
+						<div class="aside-video">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika9.png">
+							</div>
+							<div class="video-text">
+								<h5>Animal Thug Life Compilation</h5>
+								<h6>Author: Thug Life Compilation</h6>
+								<h6>138.123 views</h6>
+							</div>
+						</div>
+						<div class="aside-video">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika10.png">
+							</div>
+							<div class="video-text">
+								<h5>Classic Thug Life Compilation</h5>
+								<h6>Author: Thug Life Nation</h6>
+								<h6>3.923.193 views</h6>
+							</div>
+						</div>
+
+						<div class="aside-video">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika5.png">
+							</div>
+							<div class="video-text">
+								<h5>Best of Thug Life Compilations</h5>
+								<h6>Author: Thug Life Compilations</h6>
+								<h6>2.589.323 views</h6>
+							</div>
+						</div>
+
+						<div class="aside-video">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika11.png">
+							</div>
+							<div class="video-text">
+								<h5>The Best of Thug Life 2</h5>
+								<h6>Author: 9Gager Life</h6>
+								<h6>1.246.402 views</h6>
+							</div>
+						</div>
+
+						<div class="aside-video">
+							<div class="video-image">
+								<img width="120" height="80" src="slike/klipovi/slika12.png">
+							</div>
+							<div class="video-text">
+								<h5>THUG life Compilation</h5>
+								<h6>Author: Thug Life TV</h6>
+								<h6>180.290 views</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="footer-content">
+			<div class="logo-row">
+				<div class="footer-logo">
+					<img width="100" height="50" src="slike/slika-logo.png">
+				</div>
+				<div class="footer-buttons">
+					<h6 class="footer-button"><i class="fa fa-globe"></i> Language: English<i class="fa fa-caret-down"></i></h6>
+					<h6 class="footer-button">Country: England <i class="fa fa-caret-down"></i></h6>
+					<h6 class="footer-button">Limited: Off <i class="fa fa-caret-down"></i></h6>
+					<h6 class="footer-button"><i class="fa fa-hourglass-half"></i> History</h6>
+					<h6 class="footer-button"><i class="fa fa-question-circle"></i> Help</h6>
+				</div>
+
+			</div>
+			<div class="footer-bottom">
+				<div class="link-headers">
+					<h5>About</h5>
+					<h5>Press</h5>
+					<h5>Copyright</h5>
+					<h5>Creators</h5>
+					<h5>Advertise</h5>
+					<h5>Developers</h5>
+					<h5>+YouTube</h5>
+				</div>
+				<div class="link-paragraphs">
+					<p>Terms</p>
+					<p>Privacy</p>
+					<p>Policy & Safety</p>
+					<p>Send Feedback</p>
+					<p>Try something new!</p>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>
